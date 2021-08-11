@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+
+<view>
+  <view
+  wx:for="{{list}}"
+  wx:for-item="item"
+  wx:for-index="index"
+  wx:key="title">
+    <view>职业：{{item.title}}</view>
+    <view>价格：{{item.price}}</view>
+    <view>描述：{{item.description}}</view>
+    <image mode="aspectFit" src="/icon/house.png"> </image>
+    <!-- try to change to 
+      <image mode="aspectFit" src="{{item.image}}"> </image>
+    -->
+    <view></view>
+  </view>
+</view>
+
+</view>
